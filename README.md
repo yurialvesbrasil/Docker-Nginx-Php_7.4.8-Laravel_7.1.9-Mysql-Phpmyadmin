@@ -1,6 +1,6 @@
 # Descrição
 
-Docker utilizando o compose, arquivo de configuração com variáveis de ambiente, criando um container nginx 1.13.3 e um container php 7.4.8-fpm ligados através de um link e criando um container mysql 5.7.19.
+Docker utilizando o compose, arquivo de configuração com variáveis de ambiente, criando um container nginx 1.13.3 e um container php 7.4.8-fpm ligados através de um link e criando um container mysql 5.7.19 e PhpMyadmin.
 
 Laravel versão 7.1.9
 
@@ -18,9 +18,6 @@ Laravel versão 7.1.9
 	
 	Virtual Host: nginx/sites -> /etc/nginx/conf.d
 	
-3. Virtual Host
-
-	Criação do vhost modelo http://api.dev (vhost modificável)
 
 # Configuração Container Php
 
@@ -75,8 +72,6 @@ Laravel versão 7.1.9
 4. Adicione os domínios no arquivo de hosts do windows.
 
    127.0.0.1 localhost
-
-   127.0.0.1 api.dev
 
 5. Acessar o shell do container:
     
